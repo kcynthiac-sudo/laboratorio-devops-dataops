@@ -15,6 +15,11 @@ pipeline {
                 bat '"C:\\Users\\ASUS\\AppData\\Local\\Python\\pythoncore-3.13-64\\python.exe" -m pip install psycopg2-binary'
             }
         }
+        stage('Mostrar script') {
+    steps {
+        bat 'type scripts\\procesamiento.py'
+    }
+}
 
         stage('Ejecutar procesamiento') {
             steps {
