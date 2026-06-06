@@ -5,7 +5,7 @@ pipeline {
 
         stage('Validar Python') {
             steps {
-                bat 'python --version'
+                bat '"C:\\Users\\ASUS\\AppData\\Local\\Python\\bin\\python.exe" --version'
             }
         }
 
@@ -18,7 +18,7 @@ pipeline {
 
         stage('Ejecutar procesamiento') {
             steps {
-                bat 'python scripts/procesamiento.py'
+                bat '"C:\\Users\\ASUS\\AppData\\Local\\Python\\bin\\python.exe" scripts\\procesamiento.py'
             }
         }
 
