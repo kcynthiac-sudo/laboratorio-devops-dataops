@@ -10,11 +10,11 @@ pipeline {
         }
 
         stage('Instalar dependencias') {
-            steps {
-                bat 'pip install pandas'
-                bat 'pip install psycopg2-binary'
-            }
-        }
+    steps {
+        bat '"C:\\Users\\ASUS\\AppData\\Local\\Python\\bin\\python.exe" -m pip install pandas'
+        bat '"C:\\Users\\ASUS\\AppData\\Local\\Python\\bin\\python.exe" -m pip install psycopg2-binary'
+    }
+}
 
         stage('Ejecutar procesamiento') {
             steps {
