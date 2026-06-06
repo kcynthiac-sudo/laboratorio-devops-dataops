@@ -6,7 +6,10 @@ df = pd.read_csv("input/dataset.csv")
 
 # Conexión PostgreSQL
 conexion = psycopg2.connect(
-    "host=localhost dbname=ventasdb user=admin password=admin123"
+    host="localhost",
+    dbname="ventasdb",
+    user="admin",
+    password="admin123"
 )
 
 cursor = conexion.cursor()
